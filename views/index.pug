@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title My App
+  body
+    h1 To Do List
+    ul
+      each i in todo
+        li #{i.Do}
+    form(action='/task' method='POST')
+      input(type='text' placeholder='task' name='Do')
+      button Add
