@@ -1,12 +1,34 @@
 doctype html
 html
-  head
-    title My App
-  body
-    h1 To Do List
-    ul
-      each i in todo
-        li #{i.Do}
-    form(action='/task' method='POST')
-      input(type='text' placeholder='task' name='Do')
-      button Add
+    head
+        title My App
+        style
+            include ../public/style.css
+        script
+            include ../public/script.js
+    body
+        h1 To Do List
+        div(class='main')
+          div(class='add')
+            h3 Add Item
+            form(action='/task' method='POST')
+                label DO: #[input(type='text' placeholder='task' name='Do')]
+                button Add
+          div(class='list')
+              h3 Task List:
+              each i in todo
+                div(class='item')
+                  p <b>ID:</b> #{i._id}  <b>TASK:</b> #{i.Do}
+          div(class='update')
+             h3 Update Item:
+             form(action='/update' method='POST')
+                 div
+                   label Id: #[input(type='text' placeholder='enter the id' name='id')]
+                 div
+                   label Task: #[input(type='text' placeholder='task' name='Do')]
+                   button Update
+          div(class='remove')
+             h3 Delete Item:
+             form(action='/delete' method='POST')
+                 label DO: #[input(type='text' placeholder='task' name='id')]
+                 button Delete
