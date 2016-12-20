@@ -1,0 +1,69 @@
+body {
+  /*background-color: rgb(187, 146, 180);*/
+}
+.main {
+  display: flex;
+}
+
+h1{
+  text-align: center;
+  /*background-color: rgb(121, 79, 213);*/
+  color: rgb(170, 64, 121);
+  text-decoration: underline;
+}
+h3 {
+  color: rgb(170, 64, 121);
+  text-decoration: underline;
+}
+p {
+  border: 1px solid rgb(170, 64, 121);
+  background-color: rgb(240, 111, 158);
+}
+input {
+  width: 100%;
+  /*background-color: rgb(240, 111, 158);*/
+}
+label {
+  font-size: 16px;
+}
+button {
+  background-color: rgb(170, 64, 121);
+  border: none;
+  height: 30px;
+  width: 60px;
+}
+
+.action {
+  width: 30%;
+  height: auto;
+  background-color: rgb(170, 64, 121);
+  border: 2px solid rgb(170, 64, 121);
+}
+.add {
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+.update {
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+.remove {
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+}
+
+.list {
+  margin: 0px 0px 0px 10px;
+  padding: 0px 0px 1px 0px;
+  border: 5px groove rgb(170, 64, 121);
+  background-color: white;
+  height: auto;
+  width: 70%;
+}
+.list h2 {
+  text-align: center;
+  color: rgb(170, 64, 121);
+  text-decoration: underline;
+}
